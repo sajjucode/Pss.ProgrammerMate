@@ -1,0 +1,5 @@
+/*!CK:892748262!*//*1448918216,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["cK0fo"]); }
+
+__d('ReactComposerVideoUploadPlaceholder.react',['ReactComposerPropsAndStoreBasedStateMixin','ReactComposerStore','Image.react','ReactComponentWithPureRenderMixin','React','XUICloseButton.react','cx','ix'],function a(b,c,d,e,f,g,h,i,j,k,l,m,n,o){'use strict';if(c.__markCompiled)c.__markCompiled();var p=l.PropTypes,q=l.createClass({displayName:'ReactComposerVideoUploadPlaceholder',mixins:[k,h(i)],propTypes:{onRemoveClick:p.func},statics:{calculateState:function(r,s){return {posting:i.isPosting(r)};}},render:function(){var r="_2oe _5ip5",s="_3ew _5iph",t=this.state.posting?null:l.createElement(m,{className:"_5ipi",onClick:this.props.onRemoveClick,shade:'light',size:'medium'});return (l.createElement('div',{className:r},t,l.createElement(j,{className:s,src:o('images/icons/timeline/placeholder/placeholder-movies.png')})));}});f.exports=q;},null);

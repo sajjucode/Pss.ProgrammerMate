@@ -1,0 +1,5 @@
+/*!CK:3890111725!*//*1449254710,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["cmKdf"]); }
+
+__d('ReactComposerPhotoFaceboxTagger.react',['ReactComposerFaceboxTaggerTypeaheadPresenter','ReactComponentWithPureRenderMixin','React','XUITypeahead.react','cx','fbt'],function a(b,c,d,e,f,g,h,i,j,k,l,m){'use strict';if(c.__markCompiled)c.__markCompiled();var n=j.PropTypes,o=j.createClass({displayName:'ReactComposerPhotoFaceboxTagger',mixins:[i],propTypes:{faceboxID:n.string.isRequired,dataSource:n.object.isRequired,onTagAdded:n.func.isRequired},getInitialState:function(){return {query:''};},render:function(){var p=m._("Who is this?");return (j.createElement(k,{className:"_xgd",queryString:this.state.query,placeholder:p,onSelectAttempt:this._onTokenSelected,onChange:this._onTypeaheadChanged,searchSource:this.props.dataSource,highlightOnSelect:true,showEntriesOnFocus:true,autoHighlight:true,selectOnTab:true,focusedOnInit:true,presenter:h}));},_onTokenSelected:function(p){this.props.onTagAdded(this.props.faceboxID,p.getUniqueID(),p.getTitle());},_onTypeaheadChanged:function(event){this.setState({query:event.target.value});}});f.exports=o;},null);

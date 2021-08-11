@@ -1,0 +1,5 @@
+/*!CK:1574961971!*//*1449215223,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["bjIW1"]); }
+
+__d('ReactComposerPhotoFaceboxTaggerContainer.react',['ReactComposerMediaStore','ReactComposerPhotoFaceboxTagger.react','ReactComposerPropsAndStoreBasedStateMixin','ReactComposerQAndAStore','ReactComponentWithPureRenderMixin','React'],function a(b,c,d,e,f,g,h,i,j,k,l,m){'use strict';if(c.__markCompiled)c.__markCompiled();var n=m.PropTypes,o=m.createClass({displayName:'ReactComposerPhotoFaceboxTaggerContainer',mixins:[l,j(h,k)],propTypes:{faceboxID:n.string.isRequired,onTagAdded:n.func.isRequired},statics:{calculateState:function(p){var q=h.getTaggingDataSource(p)||k.getFaceboxDataSource(p);q&&q.bootstrap();return {dataSource:q};}},render:function(){return (m.createElement(i,{faceboxID:this.props.faceboxID,dataSource:this.state.dataSource,onTagAdded:this.props.onTagAdded}));}});f.exports=o;},null);

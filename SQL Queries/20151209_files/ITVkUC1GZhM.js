@@ -1,0 +1,6 @@
+/*!CK:992001580!*//*1447669174,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["BulMn"]); }
+
+__d('NotificationPhotoThumbnail',[],function a(b,c,d,e,f,g){if(c.__markCompiled)c.__markCompiled();function h(j){if(!j.media||!j.style_list||!j.style_list.length)return null;switch(j.style_list[0]){case 'new_album':case 'album':case 'application':case 'photo':case 'video':case 'video_autoplay':case 'video_inline':return j.media.image;default:return null;}}var i={getThumbnail:function(j,k,l){var m;if(j&&j.length){j.some(function(q){m=h(q);if(m)return true;return false;});if(m)return m;}if(l){var n=l.relevant_comments;if(n&&n.length){var o=n[0].attachments;if(o&&o.length){m=h(o[0]);if(m)return m;}}}if(k){var p=k.attachments;if(p&&p.length)return h(p[0]);}return null;}};f.exports=i;},null);
+__d('NotificationListPropTypes',['React'],function a(b,c,d,e,f,g,h){'use strict';if(c.__markCompiled)c.__markCompiled();var i=h.PropTypes,j={negativeTracking:i.object,tracking:i.string,useChevron:i.bool,chevronType:i.string,notifs:i.object,afterScroll:i.func,onChevronShow:i.func,onChevronHide:i.func,canFetchMore:i.bool,hiddenState:i.object,readState:i.object,showingChevron:i.bool,paused:i.bool,maxHeight:i.number,shouldScroll:i.bool,upsell:i.object,gameRecs:i.object};f.exports=j;},null);

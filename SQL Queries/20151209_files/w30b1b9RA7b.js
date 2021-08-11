@@ -1,0 +1,5 @@
+/*!CK:550550007!*//*1449215223,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["sbtDO"]); }
+
+__d('ReactComposerPhotoUploadPlaceholder.react',['ReactComposerPhotoUploadState','LoadingIndicator.react','ProgressBar.react','ReactComponentWithPureRenderMixin','React','XUICloseButton.react','cx'],function a(b,c,d,e,f,g,h,i,j,k,l,m,n){'use strict';if(c.__markCompiled)c.__markCompiled();var o=l.PropTypes,p=l.createClass({displayName:'ReactComposerPhotoUploadPlaceholder',mixins:[k],propTypes:{onRemoveButtonClicked:o.func.isRequired,uploadID:o.string.isRequired,uploadState:o.oneOf(Object.keys(h)).isRequired,uploadProgress:o.number},render:function(){var q=null,r=null,s=this.props.uploadState,t=s===h.PHOTO_UPLOAD_RESIZE_STARTED,u=s===h.PHOTO_UPLOAD_UPLOADING;if(t||u){var v="_1b01"+(t?' '+"_1b02":'')+(u?' '+"_1b03":'');q=l.createElement(j,{value:this.props.uploadProgress,className:v});}else r=l.createElement(i,{className:"_1b00",color:'white',size:'medium'});return (l.createElement('div',{className:"_1a__"},l.createElement(m,{className:"_1b04",onClick:this.props.onRemoveButtonClicked,size:'medium',shade:'dark'}),q,r));}});f.exports=p;},null);

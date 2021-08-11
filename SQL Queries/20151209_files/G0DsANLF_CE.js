@@ -1,0 +1,5 @@
+/*!CK:3572156688!*//*1449215223,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["VIKBj"]); }
+
+__d('ReactComposerPhotoUploadPlaceholderContainer.react',['ReactComposerPhotoUploadActions','ReactComposerPhotoUploadPlaceholder.react','ReactComposerPhotoUploadStore','ReactComposerPropsAndStoreBasedStateMixin','ReactComponentWithPureRenderMixin','React'],function a(b,c,d,e,f,g,h,i,j,k,l,m){'use strict';if(c.__markCompiled)c.__markCompiled();var n=m.PropTypes,o=m.createClass({displayName:'ReactComposerPhotoUploadPlaceholderContainer',mixins:[l,k(j)],propTypes:{uploadID:n.string.isRequired},statics:{calculateState:function(p,q){var r=j.getPhotoUpload(p,q.uploadID);return {uploadProgress:r.progress,uploadState:r.state};}},render:function(){return (m.createElement(i,babelHelpers._extends({},this.props,this.state,{onRemoveButtonClicked:this._onRemoveButtonClicked})));},_onRemoveButtonClicked:function(){h.removePhotoUpload(this.context.composerID,this.props.uploadID);}});f.exports=o;},null);

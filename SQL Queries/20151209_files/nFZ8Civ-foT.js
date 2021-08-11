@@ -1,0 +1,5 @@
+/*!CK:806472847!*//*1449234798,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["wl3Nb"]); }
+
+__d('ReactComposerPhotoTaggedFaceboxSummary.react',['Image.react','LeftRight.react','ReactComponentWithPureRenderMixin','React','TooltipLink.react','cx','fbt','ix'],function a(b,c,d,e,f,g,h,i,j,k,l,m,n,o){'use strict';if(c.__markCompiled)c.__markCompiled();var p=k.PropTypes,q=k.createClass({displayName:'ReactComposerPhotoTaggedFaceboxSummary',mixins:[j],propTypes:{faceboxID:p.string.isRequired,onTagRemoved:p.func.isRequired,taggedSubjectID:p.string.isRequired,taggedValue:p.string.isRequired},render:function(){var r=n._("Edit Name");return (k.createElement(i,{className:"_31bg"},k.createElement('div',{className:"_31bh"},this.props.taggedValue),k.createElement(l,{alignH:'center',position:'below',tooltip:r,onClick:this._onEditClicked},k.createElement(h,{src:o('/images/icons/edit.png')}))));},_onEditClicked:function(){this.props.onTagRemoved(this.props.faceboxID,this.props.taggedSubjectID);}});f.exports=q;},null);

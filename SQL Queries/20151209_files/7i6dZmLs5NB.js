@@ -1,0 +1,5 @@
+/*!CK:2357055458!*//*1448986652,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["8gzlO"]); }
+
+__d('ReactComposerPrefillMentionsInput',['DraftEntity','EditorState','SelectionState','createEditorStateWithEntities','getBlockNumberAndOffsetFromText','getMentionsInputDecorator'],function a(b,c,d,e,f,g,h,i,j,k,l,m){if(c.__markCompiled)c.__markCompiled();var n={createEditorState:function(o,p){if(!o||!o.text)return i.createEmpty();var q=k({text:o.text,ranges:o.ranges||[],decorator:m(),entityCreationFn:function(u){return h.create('MENTION','IMMUTABLE',{id:u.id,isWeak:!!u.weakreference});}});if(p){var r=q.getCurrentContent().getBlockMap(),s=l(o.text,p.start),t=l(o.text,p.end);q=i.acceptSelection(q,new j({anchorKey:r.skip(s.block).first().getKey(),anchorOffset:s.offset,focusKey:r.skip(t.block).first().getKey(),focusOffset:t.offset,isBackward:false}));}else q=i.moveSelectionToEnd(q);return q;}};f.exports=n;},null);

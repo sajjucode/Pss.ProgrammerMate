@@ -1,0 +1,6 @@
+/*!CK:1053087295!*//*1447272080,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["jCfNJ"]); }
+
+__d('IntlUtils',['AsyncRequest','Cookie','ReloadPage','goURI'],function a(b,c,d,e,f,g,h,i,j,k){if(c.__markCompiled)c.__markCompiled();var l={setXmode:function(m){new h().setURI('/ajax/intl/save_xmode.php').setData({xmode:m}).setHandler(function(){j.now();}).send();},setAmode:function(m){new h().setURI('/ajax/intl/save_xmode.php').setData({amode:m,app:false}).setHandler(function(){j.now();}).send();},setRmode:function(m){new h().setURI('/ajax/intl/save_xmode.php').setData({rmode:m}).setHandler(function(){j.now();}).send();},setLocale:function(m,n,o,p){if(!o)o=m.options[m.selectedIndex].value;l.saveLocale(o,true,null,n,p);},saveLocale:function(m,n,o,p,q){new h().setURI('/ajax/intl/save_locale.php').setData({aloc:m,source:p,app_only:q}).setHandler(function(r){if(n){j.now();}else k(o);}).send();},setLocaleCookie:function(m,n){i.set('locale',m,7*24*3600000);k(n);}};f.exports=l;},null);
+__d('legacy:intl-base',['IntlUtils'],function a(b,c,d,e,f,g,h){if(c.__markCompiled)c.__markCompiled();b.intl_set_xmode=h.setXmode;b.intl_set_amode=h.setAmode;b.intl_set_rmode=h.setRmode;b.intl_set_locale=h.setLocale;b.intl_save_locale=h.saveLocale;b.intl_set_cookie_locale=h.setLocaleCookie;},3);

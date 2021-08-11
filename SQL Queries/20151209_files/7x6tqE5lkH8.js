@@ -1,0 +1,5 @@
+/*!CK:2807532581!*//*1448989713,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["g3DtO"]); }
+
+__d('VideoWatchAndScrollControl.react',['AbstractButton.react','Image.react','React','cx','ix','shallowCompare'],function a(b,c,d,e,f,g,h,i,j,k,l,m){if(c.__markCompiled)c.__markCompiled();var n,o;'use strict';var p=j.PropTypes;n=babelHelpers.inherits(q,j.Component);o=n&&n.prototype;q.prototype.shouldComponentUpdate=function(r,s){return m(this,r,s);};q.prototype.onButtonClick=function(){this.props.onToggleWatchAndScroll&&this.props.onToggleWatchAndScroll();};q.prototype.render=function(){var r=j.createElement(i,{src:l('images/video/player/controls/hq_icons/watch-and-scroll-left.png')});return (j.createElement(h,{className:"_zbd",image:r,onClick:this.onButtonClick.bind(this),type:'button'}));};function q(){n.apply(this,arguments);}q.propTypes={isWatchAndScrollActive:p.bool,onToggleWatchAndScroll:p.func};f.exports=q;},null);

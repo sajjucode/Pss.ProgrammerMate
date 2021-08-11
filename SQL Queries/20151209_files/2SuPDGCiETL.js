@@ -1,0 +1,5 @@
+/*!CK:2286747814!*//*1449519519,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["9Y8hf"]); }
+
+__d('ReactComposerMediaEagerAttachment.react',['ReactComposerAttachmentType','ReactComposerAttachmentBodyMixin','ReactComposerConfig','ReactComposerMediaActions','ReactComposerMediaAttachmentContainer.react','ReactComposerStatusActions','ReactComposerTaggerActions','React'],function a(b,c,d,e,f,g,h,i,j,k,l,m,n,o){if(c.__markCompiled)c.__markCompiled();var p=o.PropTypes,q=o.createClass({displayName:'ReactComposerMediaEagerAttachment',mixins:[i()],propTypes:{config:j.isRequired,postButtonModule:p.func.isRequired},statics:{attachmentID:h.MEDIA},componentWillMount:function(){var r=this.props.config.attachmentsConfig[h.MEDIA].bootstrapData;n.updateTaggersSource(this.context.composerID,r.taggersSource);m.setMentionsSource(this.context.composerID,r.mentionsSource);k.setConfig(this.context.composerID,r);},renderX:function(){return o.createElement(l,this.props);}});f.exports=q;},null);

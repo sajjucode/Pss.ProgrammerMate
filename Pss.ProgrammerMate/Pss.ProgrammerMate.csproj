@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B0EA410-1905-4537-B7DC-36551EC95A76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pss.ProgrammerMate</RootNamespace>
+    <AssemblyName>Pss.ProgrammerMate</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ServiceBus">
+      <HintPath>..\packages\WindowsAzure.ServiceBus.1.8.0.0\lib\net40-full\Microsoft.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Configuration">
+      <HintPath>..\packages\Microsoft.WindowsAzure.ConfigurationManager.1.7.0.3\lib\net35-full\Microsoft.WindowsAzure.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Appearances\GridViewStyles.cs" />
+    <Compile Include="Appearances\MenuStyles.cs" />
+    <Compile Include="Appearances\SetFocusBlur_Color.cs" />
+    <Compile Include="CommonClasses\CommonVariables.cs" />
+    <Compile Include="CommonClasses\DALGeneratorCommon.cs" />
+    <Compile Include="CommonClasses\Messages.cs" />
+    <Compile Include="CommonClasses\Security.cs" />
+    <Compile Include="CommonClasses\SQLDataTypeConversion.cs" />
+    <Compile Include="CommonClasses\SQL\GlobalActions.cs" />
+    <Compile Include="CommonClasses\SQL\MS SQL\QueryGenerator.cs" />
+    <Compile Include="CommonClasses\Validations.cs" />
+    <Compile Include="DataAccess\Ms Sql\MsSqlDBFunctions.cs" />
+    <Compile Include="DataAccess\MySql\Base\DapperRepository.cs" />
+    <Compile Include="DataAccess\MySql\Base\IRepository.cs" />
+    <Compile Include="DataAccess\MySql\mySqlDBFunctions.cs" />
+    <Compile Include="frmBusinessEntity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBusinessEntity.Designer.cs">
+      <DependentUpon>frmBusinessEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDataAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDataAccess.Designer.cs">
+      <DependentUpon>frmDataAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProjects.Designer.cs">
+      <DependentUpon>frmProjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearching.Designer.cs">
+      <DependentUpon>frmSearching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolutionFolders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolutionFolders.Designer.cs">
+      <DependentUpon>frmSolutionFolders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolutionFolderTableMapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolutionFolderTableMapping.Designer.cs">
+      <DependentUpon>frmSolutionFolderTableMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolutions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolutions.Designer.cs">
+      <DependentUpon>frmSolutions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolutionsDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolutionsDB.Designer.cs">
+      <DependentUpon>frmSolutionsDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSQLGenerate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSQLGenerate.Designer.cs">
+      <DependentUpon>frmSQLGenerate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapper\SqlMapper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PssControls\PSSDataGridView.cs" />
+    <Compile Include="SQL Generator\frmSQLGeneratorMSSQLServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQL Generator\frmSQLGeneratorMSSQLServer.Designer.cs">
+      <DependentUpon>frmSQLGeneratorMSSQLServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIGenerator\WinFormGenerator.cs" />
+    <Compile Include="UI\WinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WinForm.Designer.cs">
+      <DependentUpon>WinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebAPI\WCFGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebAPI\WCFGenerator.Designer.cs">
+      <DependentUpon>WCFGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebAPI\WCFGenerator\WCFGenerator.cs" />
+    <EmbeddedResource Include="frmBusinessEntity.resx">
+      <DependentUpon>frmBusinessEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDataAccess.resx">
+      <DependentUpon>frmDataAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjects.resx">
+      <DependentUpon>frmProjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearching.resx">
+      <DependentUpon>frmSearching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolutionFolders.resx">
+      <DependentUpon>frmSolutionFolders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolutionFolderTableMapping.resx">
+      <DependentUpon>frmSolutionFolderTableMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolutions.resx">
+      <DependentUpon>frmSolutions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolutionsDB.resx">
+      <DependentUpon>frmSolutionsDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSQLGenerate.resx">
+      <DependentUpon>frmSQLGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SQL Generator\frmSQLGeneratorMSSQLServer.resx">
+      <DependentUpon>frmSQLGeneratorMSSQLServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WinForm.resx">
+      <DependentUpon>WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebAPI\WCFGenerator.resx">
+      <DependentUpon>WCFGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PSS.DAL.COMMON\PSS.DAL.COMMON.csproj">
+      <Project>{7da2f802-0c5c-4489-8cff-e5f6abca45f1}</Project>
+      <Name>PSS.DAL.COMMON</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pss.ProgrammerMate.DAL\Pss.ProgrammerMate.DAL.csproj">
+      <Project>{21b3c407-58da-46e0-bb18-a251164b825d}</Project>
+      <Name>Pss.ProgrammerMate.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\DBConnectionSetting.xml" />
+    <None Include="Resources\createsqlbig.png" />
+    <None Include="Resources\Folder.png" />
+    <None Include="Resources\assign.png" />
+    <None Include="Resources\withdraw.png" />
+    <None Include="Resources\browsefolder.png" />
+    <None Include="Resources\GenerateC.png" />
+    <Content Include="SQL Queries\20151209.sql" />
+    <Content Include="SQL Queries\Schema\ProgrammerMate.sql" />
+    <None Include="Resources\connectdb_small.png" />
+    <None Include="Resources\connectdb.png" />
+    <None Include="Resources\warning-icon-hi.png" />
+    <None Include="Resources\usercard_01.png" />
+    <None Include="Resources\user_group.png" />
+    <None Include="Resources\TOYOTA_BWP_LOGO %281%29.png" />
+    <None Include="Resources\Today.png" />
+    <None Include="Resources\Success.png" />
+    <None Include="Resources\status.png" />
+    <None Include="Resources\SOP-Order.png" />
+    <None Include="Resources\search_group.png" />
+    <None Include="Resources\search %281%29.png" />
+    <None Include="Resources\rank.png" />
+    <None Include="Resources\profile.png" />
+    <None Include="Resources\Notification_orange.png" />
+    <None Include="Resources\N3.png" />
+    <None Include="Resources\N1.png" />
+    <None Include="Resources\money.png" />
+    <None Include="Resources\free_for_job.png" />
+    <None Include="Resources\edit_find.png" />
+    <None Include="Resources\department.png" />
+    <None Include="Resources\default_icon.png" />
+    <None Include="Resources\currency_dollar_red.png" />
+    <None Include="Resources\Confirm.png" />
+    <None Include="Resources\coins1.png" />
+    <None Include="Resources\coins.png" />
+    <None Include="Resources\clock_yellow.png" />
+    <None Include="Resources\clock_yellow %282%29.png" />
+    <None Include="Resources\clock_yellow %281%29.png" />
+    <None Include="Resources\cars.png" />
+    <None Include="Resources\car_repair.png" />
+    <None Include="Resources\arrow-orange-vertical.png" />
+    <None Include="Resources\arrow-green-horizontal.png" />
+    <None Include="Resources\appointment_cool.png" />
+    <None Include="Resources\Appointment_bg1.png" />
+    <None Include="Resources\Appointment_bg.png" />
+    <None Include="Resources\alert %281%29.png" />
+    <None Include="Resources\1417110356_Log Out.png" />
+    <None Include="Resources\1417109849_view-refresh-32.png" />
+    <None Include="Resources\1417109725_document_search.png" />
+    <None Include="Resources\1417107178_cancel.png" />
+    <None Include="Resources\1417107109_folder_delete.png" />
+    <None Include="Resources\1417106980_document_edit.png" />
+    <None Include="Resources\1416248239_Save.png" />
+    <None Include="Resources\1416248218_Add.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
